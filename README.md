@@ -21,7 +21,7 @@ pip install -r requirements.txt
 2) Configure LLM fallback (optional)
 
 - Copy `.env.template` to `.env`
-- Fill in `SUB2API_API_KEY`
+- Fill in `OPENAI_API_KEY`
 
 ```bash
 cp .env.template .env

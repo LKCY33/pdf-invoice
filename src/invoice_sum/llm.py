@@ -36,9 +36,9 @@ def llm_enabled() -> bool:
 
 
 def extract_with_llm(text: str) -> LlmExtraction:
-    base_url = os.environ["SUB2API_BASE_URL"].rstrip("/")
-    api_key = os.environ["SUB2API_API_KEY"]
-    model = os.getenv("SUB2API_MODEL", "gpt-5.2")
+    base_url = os.environ["OPENAI_BASE_URL"].rstrip("/")
+    api_key = os.environ["OPENAI_API_KEY"]
+    model = os.getenv("OPENAI_MODEL", "gpt-5.2")
 
     url = f"{base_url}/responses"
     headers = {
